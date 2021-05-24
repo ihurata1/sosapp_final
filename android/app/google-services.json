@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "620019922228",
+    "project_id": "sosapp-36233",
+    "storage_bucket": "sosapp-36233.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:620019922228:android:9fb1aba4151ecaabd8e161",
+        "android_client_info": {
+          "package_name": "com.tedu.sosapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "620019922228-t03j452qfnut7g3slousjm1o5ic47oqb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6hPUJG8nizS36biyJk3TrHAS_aGbZU8s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "620019922228-t03j452qfnut7g3slousjm1o5ic47oqb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
