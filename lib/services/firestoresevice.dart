@@ -4,6 +4,7 @@ import 'package:sosapp/models/notificationn.dart';
 import 'package:sosapp/models/post.dart';
 import 'package:sosapp/pages/search.dart';
 import 'package:sosapp/services/storageservice.dart';
+import 'dart:developer';
 
 class FireStoreService {
   final Firestore _firestore = Firestore.instance;
@@ -49,9 +50,18 @@ class FireStoreService {
         .collection("users")
         .where("username", isGreaterThanOrEqualTo: word) //tekrar bak!
         .getDocuments();
+    word = word.toLowerCase();
+    List<Kullanici> user2 = new List<Kullanici>();
     List<Kullanici> users =
         snapshot.documents.map((doc) => Kullanici.dokumandanUret(doc)).toList();
-    return users;
+    users.forEach((element) {
+      String a = element.kullaniciAdi.toLowerCase();
+      if (a.contains(word)) {
+        log(element.kullaniciAdi.toLowerCase());
+        user2.add(element);
+      }
+    });
+    return user2;
   }
 
   void follow({String activeUserId, String profileOwnerId}) {
