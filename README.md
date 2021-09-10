@@ -1,6 +1,6 @@
 # S.O.S
 
-A new Flutter project.
+A social media app which aims to help stray animals.
 
 ## Getting Started
 
